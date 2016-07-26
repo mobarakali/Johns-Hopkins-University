@@ -22,6 +22,8 @@ Layout -----------------------*/
 	margin: 15px;
 	overflow: hidden;
 	position: relative;
+	transition: all .5s ease-out;
+	background-image: linear-gradient(to right, rgba(62,212,208,.2), rgba(255,255,0,.2));
 }
 
 /******************************
@@ -34,7 +36,7 @@ body{
 }
 h1{
 	font-family: "Segoe UI", sherif;
-	font-size: 60px;
+	font-size: 72px;
 	font-weight: 100;
 	text-align: center;
 	margin: 100px auto;
@@ -47,18 +49,36 @@ h2{
 	font-weight: 100;
 	color: rgb(240, 240, 240);
 	text-transform: uppercase;
-	line-height: 1.2;
 	text-align: center;
 	background:rgb(62,212,208);
 	float: right;
 	width: 200px;
 	height: 50px;
 	line-height: 50px;
+	transition: all 1s ease-out;
 }
 .item p{
-	margin-top: 65px;
+	margin-top: 60px;
 	text-align: justify;
+	padding: 0 15px 25px;
+	font-size: 16px;
+	line-height: 30px;
 }
+
+/*************************
+Psudo Design  -----------*/
+.item:hover{
+	box-shadow: 0px 0px 10px 0px rgba(62,212,208, .25);
+	background-image: linear-gradient(to right, rgba(62,212,208,.15), rgba(255,255,0,.15));
+
+}
+.item:hover h2{
+	color: #fff;
+	width: 100%;
+	letter-spacing: 10px;
+
+}
+
 
 /******************************
 Responsive Design  -----------*/
@@ -174,4 +194,24 @@ Tablet (between 768px and 991px) 		*/
   .tab-12 {
     width: 100%;
   }
+}
+
+/*/////////////////////////////////////////////////
+Mobile (is equal to or less than 767px) 		*/
+
+@media (max-width: 767px) {
+	h1{font-size: 48px;}
+
+	h2{
+	font-size: 28px;
+	line-height: 40px;
+	height: 40px;
+	width: 160px;
+	}
+	.item p{
+	font-size: 15px;
+	margin-top: 50px;
+	line-height: 26px;
+	}
+
 }
