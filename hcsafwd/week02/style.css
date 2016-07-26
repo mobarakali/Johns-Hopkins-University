@@ -11,11 +11,23 @@ CSS Reset --------------------*/
 Layout -----------------------*/
 
 
-
 /******************************
 Typography -------------------*/
 
+body{
+	background-color: #fff;
+	color: #666;
+	font-family: "Roboto", sherif;
+}
+h1{
+	font-family: "Segoe UI", sherif;
+	font-size: 60px;
+	font-weight: 100;
+	text-align: center;
+	margin: 100px auto;
+	color: #44c6c3;
 
+}
 
 /******************************
-Responsive Design ------------*/
+Responsive Design  -----------*/
