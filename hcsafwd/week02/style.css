@@ -9,13 +9,26 @@ CSS Reset --------------------*/
 
 /******************************
 Layout -----------------------*/
-
+#container{
+	margin: 0 25px;
+	padding: 15px;
+}
+.row{
+	margin: 0 -15px;
+}
+.item{
+	background-color: #fff;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+	overflow: hidden;
+	position: relative;
+}
 
 /******************************
 Typography -------------------*/
 
 body{
-	background-color: #fff;
+	background-color: rgb(240,240,240);
 	color: #666;
 	font-family: "Roboto", sherif;
 }
@@ -26,8 +39,139 @@ h1{
 	text-align: center;
 	margin: 100px auto;
 	color: #44c6c3;
+}
 
+h2{
+	font-size: 36px;
+	font-family: "Segoe UI";
+	font-weight: 100;
+	color: rgb(240, 240, 240);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	background:rgb(62,212,208);
+	float: right;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+}
+.item p{
+	margin-top: 65px;
+	text-align: justify;
 }
 
 /******************************
 Responsive Design  -----------*/
+
+
+/*/////////////////////////////////
+Desktop (992px and above) 		*/
+
+@media (min-width: 992px) {
+  .desk-1, 
+  .desk-2, 
+  .desk-3, 
+  .desk-4, 
+  .desk-5, 
+  .desk-6, 
+  .desk-7, 
+  .desk-8, 
+  .desk-9, 
+  .desk-10, 
+  .desk-11, 
+  .desk-12 {
+    float: left;
+  }
+  .desk-1 {
+    width: 8.33%;
+  }
+  .desk-2 {
+    width: 16.66%;
+  }
+  .desk-3 {
+    width: 25%;
+  }
+  .desk-4 {
+    width: 33.33%;
+  }
+  .desk-5 {
+    width: 41.66%;
+  }
+  .desk-6 {
+    width: 50%;
+  }
+  .desk-7 {
+    width: 58.33%;
+  }
+  .desk-8 {
+    width: 66.66%;
+  }
+  .desk-9 {
+    width: 74.99%;
+  }
+  .desk-10 {
+    width: 83.33%;
+  }
+  .desk-11 {
+    width: 91.66%;
+  }
+  .desk-12 {
+    width: 100%;
+  }
+}
+
+/*/////////////////////////////////////////
+Tablet (between 768px and 991px) 		*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab-1, 
+  .tab-2, 
+  .tab-3, 
+  .tab-4, 
+  .tab-5, 
+  .tab-6, 
+  .tab-7, 
+  .tab-8, 
+  .tab-9, 
+  .tab-10, 
+  .tab-11, 
+  .tab-12 {
+    float: left;
+  }
+  .tab-1 {
+    width: 8.33%;
+  }
+  .tab-2 {
+    width: 16.66%;
+  }
+  .tab-3 {
+    width: 25%;
+  }
+  .tab-4 {
+    width: 33.33%;
+  }
+  .tab-5 {
+    width: 41.66%;
+  }
+  .tab-6 {
+    width: 50%;
+  }
+  .tab-7 {
+    width: 58.33%;
+  }
+  .tab-8 {
+    width: 66.66%;
+  }
+  .tab-9 {
+    width: 74.99%;
+  }
+  .tab-10 {
+    width: 83.33%;
+  }
+  .tab-11 {
+    width: 91.66%;
+  }
+  .tab-12 {
+    width: 100%;
+  }
+}
