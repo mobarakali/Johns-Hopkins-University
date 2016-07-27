@@ -11,19 +11,22 @@ CSS Reset --------------------*/
 Layout -----------------------*/
 #container{
 	margin: 0 25px;
-	padding: 15px;
+	padding: 15px 15px 150px;
+  overflow: hidden;
 }
 .row{
 	margin: 0 -15px;
 }
 .item{
 	background-color: #fff;
-	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
 	margin: 15px;
 	overflow: hidden;
 	position: relative;
-	transition: all .5s ease-out;
+	transition: all 1s ease-out;
 	background-image: linear-gradient(to right, rgba(62,212,208,.2), rgba(255,255,0,.2));
+  border-bottom:5px solid rgba(62,212,208, .15);
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px; 
 }
 
 /******************************
@@ -58,27 +61,29 @@ h2{
 	line-height: 50px;
 	transition: all 1s ease-out;
 }
+
 .item p{
-	margin-top: 60px;
-	text-align: justify;
-	padding: 0 15px 25px;
-	font-size: 16px;
-	line-height: 30px;
+  margin-top: 60px;
+  text-align: justify;
+  padding: 0 15px 25px;
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 300;
 }
 
 /*************************
 Psudo Design  -----------*/
 .item:hover{
-	box-shadow: 0px 0px 10px 0px rgba(62,212,208, .25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0, .25);
 	background-image: linear-gradient(to right, rgba(62,212,208,.15), rgba(255,255,0,.15));
-
+  border-bottom:5px solid rgba(62,212,208, 1);
 }
 .item:hover h2{
 	color: #fff;
 	width: 100%;
 	letter-spacing: 10px;
 }
+
 /* color for different title*/
 .row>div:nth-child(2) h2 { 
     background:rgb(0, 145, 234);
@@ -86,12 +91,24 @@ Psudo Design  -----------*/
 .row>div:nth-child(3) h2 { 
     background:rgb(1, 87, 155);
 }
+.row>div:nth-child(2) .item { 
+    border-bottom:5px solid rgba(0, 145, 234,.15);
+}
+.row>div:nth-child(3) .item { 
+    border-bottom:5px solid rgba(1, 87, 155,.15);
+}
+.row>div:nth-child(2) .item:hover { 
+    border-bottom:5px solid rgb(0, 145, 234);
+}
+.row>div:nth-child(3) .item:hover { 
+    border-bottom:5px solid rgb(1, 87, 155);
+}
 
 /******************************
 Responsive Design  -----------*/
 
 
-/*/////////////////////////////////
+/*//////////////////////////////
 Desktop (992px and above) 		*/
 
 @media (min-width: 992px) {
@@ -147,7 +164,7 @@ Desktop (992px and above) 		*/
   }
 }
 
-/*/////////////////////////////////////////
+/*////////////////////////////////////
 Tablet (between 768px and 991px) 		*/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -203,7 +220,7 @@ Tablet (between 768px and 991px) 		*/
   }
 }
 
-/*/////////////////////////////////////////////////
+/*////////////////////////////////////////////
 Mobile (is equal to or less than 767px) 		*/
 
 @media (max-width: 767px) {
@@ -220,5 +237,4 @@ Mobile (is equal to or less than 767px) 		*/
 	margin-top: 50px;
 	line-height: 26px;
 	}
-
 }
