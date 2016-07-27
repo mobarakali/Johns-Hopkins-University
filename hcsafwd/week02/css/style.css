@@ -32,21 +32,22 @@ Typography -------------------*/
 body{
 	background-color: rgb(240,240,240);
 	color: #666;
-	font-family: "Roboto", sherif;
+	font-family: 'Roboto', sans-serif;
 }
 h1{
-	font-family: "Segoe UI", sherif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 72px;
 	font-weight: 100;
 	text-align: center;
 	margin: 100px auto;
 	color: #44c6c3;
+  transition: all 1s ease-out;
 }
 
 h2{
 	font-size: 36px;
-	font-family: "Segoe UI";
-	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	color: rgb(240, 240, 240);
 	text-transform: uppercase;
 	text-align: center;
@@ -63,6 +64,7 @@ h2{
 	padding: 0 15px 25px;
 	font-size: 16px;
 	line-height: 30px;
+  font-weight: 300;
 }
 
 /*************************
