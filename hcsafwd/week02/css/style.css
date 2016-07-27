@@ -78,9 +78,14 @@ Psudo Design  -----------*/
 	color: #fff;
 	width: 100%;
 	letter-spacing: 10px;
-
 }
-
+/* color for different title*/
+.row>div:nth-child(2) h2 { 
+    background:rgb(0, 145, 234);
+}
+.row>div:nth-child(3) h2 { 
+    background:rgb(1, 87, 155);
+}
 
 /******************************
 Responsive Design  -----------*/
