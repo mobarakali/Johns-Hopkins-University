@@ -1,0 +1,19 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default{
+	background: pink;
+	border-radius: 0;
+}
+
+/* nav color*/
+ul.visible-xs a[href*="Chicken"]{
+	background: red;
+}
+ul.visible-xs a[href*="Beef"]{
+	background: green;
+}
+ul.visible-xs a[href*="Sushi"]{
+	background: blue;
+}

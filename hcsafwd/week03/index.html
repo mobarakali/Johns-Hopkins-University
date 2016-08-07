@@ -20,31 +20,51 @@
   </head>
 <body>
   <!-- Adding Navbar -->
-  <nav class="navbar navbar-default top-nav">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Food, LLC</a>
+ <nav class="navbar navbar-default"> 
+    <div class="container"> 
+      <div class="navbar-header"> 
+        <!-- Here I followed the original bootstrap example which put the buttons first -->
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button> 
+      <!-- The origingal bootstrap example puts the navbar-brand at bottom as like my code! -->
+      <a href="#" class="navbar-brand">Food, LLC</a> 
+
+      </div>  <!-- navbar-header -->
+
+      <div class="collapse navbar-collapse" id="collapse-navbar"> 
+      <!-- "visible-xs" class will hide the navbar form tablet and desktop screens -->
+        <ul class="nav navbar-nav visible-xs">  
+          <li><a href="#Chicken">Chicken</a></li> 
+          <li><a href="#Beef">Beef</a></li> 
+          <li><a href="#Sushi">Sushi</a></li> 
+        </ul> 
+      </div> 
+    </div> 
+  </nav>
+<div class="container">
+<h1 class="text-center">Our Menu</h1>
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="Chicken">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita itaque mollitia rerum non et nesciunt aliquid, ipsam. Deserunt atque officia eum soluta sint quo labore perferendis, obcaecati sed veniam in officiis voluptatem doloremque asperiores nobis excepturi cupiditate. Aspernatur beatae, magnam facilis odio neque sint soluta, atque pariatur, eos cumque dignissimos sit asperiores autem iusto! Ex porro non deserunt debitis vel recusandae eius placeat temporibus animi, laboriosam aut consequatur enim omnis labore dignissimos esse illo voluptates excepturi? Placeat sed a, ex culpa fugiat iusto illo consequuntur eligendi, iure aperiam quo odio natus, corporis ea esse nam cumque blanditiis magni? Maiores, explicabo. ipsum dolor sit amet, consectetur adipisicing elit. Id beatae, harum quibusdam pariatur perspiciatis autem eaque vel fugit corporis eligendi ut, nesciunt, nobis ex dicta temporibus veniam at a. Delectus consequatur necessitatibus veniam unde repellendus expedita ea deserunt, laudantium nihil vitae, cum, provident aut perspiciatis beatae commodi accusamus ullam iusto nam repudiandae incidunt porro. Laborum voluptatum, aperiam a officia odio laudantium, minima illum reprehenderit, rem dolorum unde reiciendis. Eos dolores laboriosam, explicabo quae commodi porro praesentium, aut minima at tenetur alias? Nemo libero deleniti ut officia fugiat molestiae! Voluptate eveniet, commodi minus dolor placeat accusamus numquam libero officiis tempore nihil. ipsum dolor sit amet, consectetur adipisicing elit. Sed quod, neque sapiente provident minima aliquam similique dignissimos sint hic beatae ab soluta quibusdam excepturi numquam tempora itaque, ullam animi. Deleniti eligendi quos nobis rerum obcaecati, voluptates accusamus debitis suscipit alias totam esse, quam aut dignissimos dolor repellendus quo dolorem nihil ipsum inventore reprehenderit, maxime. Laboriosam architecto ipsum nostrum praesentium aspernatur consequatur beatae, iure sequi aut exercitationem facilis temporibus? Qui sit quibusdam cupiditate, nesciunt nisi placeat aut, quam eaque, corrupti eos sunt ullam harum. Maiores ipsum dolorem necessitatibus, minima! Ipsam sed, dolorem vero id fugit! Officiis et exercitationem qui minima provident! ipsum dolor sit amet, consectetur adipisicing elit. A quis iusto, architecto. Beatae consequatur quibusdam voluptatum, quaerat facilis rem provident ex excepturi ab enim! Accusamus velit iste ab. Voluptatum, praesentium?
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
-        <ul class="nav navbar-nav visible­xs">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-
-
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav> <!-- nav -->
-
+    </div>
+        <div class="col-xs-12">
+      <div id="Beef">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita itaque mollitia rerum non et nesciunt aliquid, ipsam. Deserunt atque officia eum soluta sint quo labore perferendis, obcaecati sed veniam in officiis voluptatem doloremque asperiores nobis excepturi cupiditate. Aspernatur beatae, magnam facilis odio neque sint soluta, atque pariatur, eos cumque dignissimos sit asperiores autem iusto! Ex porro non deserunt debitis vel recusandae eius placeat temporibus animi, laboriosam aut consequatur enim omnis labore dignissimos esse illo voluptates excepturi? Placeat sed a, ex culpa fugiat iusto illo consequuntur eligendi, iure aperiam quo odio natus, corporis ea esse nam cumque blanditiis magni? Maiores, explicabo. ipsum dolor sit amet, consectetur adipisicing elit. Id beatae, harum quibusdam pariatur perspiciatis autem eaque vel fugit corporis eligendi ut, nesciunt, nobis ex dicta temporibus veniam at a. Delectus consequatur necessitatibus veniam unde repellendus expedita ea deserunt, laudantium nihil vitae, cum, provident aut perspiciatis beatae commodi accusamus ullam iusto nam repudiandae incidunt porro. Laborum voluptatum, aperiam a officia odio laudantium, minima illum reprehenderit, rem dolorum unde reiciendis. Eos dolores laboriosam, explicabo quae commodi porro praesentium, aut minima at tenetur alias? Nemo libero deleniti ut officia fugiat molestiae! Voluptate eveniet, commodi minus dolor placeat accusamus numquam libero officiis tempore nihil. ipsum dolor sit amet, consectetur adipisicing elit. Sed quod, neque sapiente provident minima aliquam similique dignissimos sint hic beatae ab soluta quibusdam excepturi numquam tempora itaque, ullam animi. Deleniti eligendi quos nobis rerum obcaecati, voluptates accusamus debitis suscipit alias totam esse, quam aut dignissimos dolor repellendus quo dolorem nihil ipsum inventore reprehenderit, maxime. Laboriosam architecto ipsum nostrum praesentium aspernatur consequatur beatae, iure sequi aut exercitationem facilis temporibus? Qui sit quibusdam cupiditate, nesciunt nisi placeat aut, quam eaque, corrupti eos sunt ullam harum. Maiores ipsum dolorem necessitatibus, minima! Ipsam sed, dolorem vero id fugit! Officiis et exercitationem qui minima provident! ipsum dolor sit amet, consectetur adipisicing elit. A quis iusto, architecto. Beatae consequatur quibusdam voluptatum, quaerat facilis rem provident ex excepturi ab enim! Accusamus velit iste ab. Voluptatum, praesentium?
+      </div>
+    </div>
+        <div class="col-xs-12">
+      <div id="Sushi">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita itaque mollitia rerum non et nesciunt aliquid, ipsam. Deserunt atque officia eum soluta sint quo labore perferendis, obcaecati sed veniam in officiis voluptatem doloremque asperiores nobis excepturi cupiditate. Aspernatur beatae, magnam facilis odio neque sint soluta, atque pariatur, eos cumque dignissimos sit asperiores autem iusto! Ex porro non deserunt debitis vel recusandae eius placeat temporibus animi, laboriosam aut consequatur enim omnis labore dignissimos esse illo voluptates excepturi? Placeat sed a, ex culpa fugiat iusto illo consequuntur eligendi, iure aperiam quo odio natus, corporis ea esse nam cumque blanditiis magni? Maiores, explicabo. ipsum dolor sit amet, consectetur adipisicing elit. Id beatae, harum quibusdam pariatur perspiciatis autem eaque vel fugit corporis eligendi ut, nesciunt, nobis ex dicta temporibus veniam at a. Delectus consequatur necessitatibus veniam unde repellendus expedita ea deserunt, laudantium nihil vitae, cum, provident aut perspiciatis beatae commodi accusamus ullam iusto nam repudiandae incidunt porro. Laborum voluptatum, aperiam a officia odio laudantium, minima illum reprehenderit, rem dolorum unde reiciendis. Eos dolores laboriosam, explicabo quae commodi porro praesentium, aut minima at tenetur alias? Nemo libero deleniti ut officia fugiat molestiae! Voluptate eveniet, commodi minus dolor placeat accusamus numquam libero officiis tempore nihil. ipsum dolor sit amet, consectetur adipisicing elit. Sed quod, neque sapiente provident minima aliquam similique dignissimos sint hic beatae ab soluta quibusdam excepturi numquam tempora itaque, ullam animi. Deleniti eligendi quos nobis rerum obcaecati, voluptates accusamus debitis suscipit alias totam esse, quam aut dignissimos dolor repellendus quo dolorem nihil ipsum inventore reprehenderit, maxime. Laboriosam architecto ipsum nostrum praesentium aspernatur consequatur beatae, iure sequi aut exercitationem facilis temporibus? Qui sit quibusdam cupiditate, nesciunt nisi placeat aut, quam eaque, corrupti eos sunt ullam harum. Maiores ipsum dolorem necessitatibus, minima! Ipsam sed, dolorem vero id fugit! Officiis et exercitationem qui minima provident! ipsum dolor sit amet, consectetur adipisicing elit. A quis iusto, architecto. Beatae consequatur quibusdam voluptatum, quaerat facilis rem provident ex excepturi ab enim! Accusamus velit iste ab. Voluptatum, praesentium?
+      </div>
+    </div>
+  </div>
+</div>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
