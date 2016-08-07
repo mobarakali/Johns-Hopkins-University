@@ -8,12 +8,59 @@ body{
 }
 
 /* nav color*/
-ul.visible-xs a[href*="Chicken"]{
+ul.visible-xs a[href*="chicken"]{
 	background: red;
 }
-ul.visible-xs a[href*="Beef"]{
+ul.visible-xs a[href*="ceef"]{
 	background: green;
 }
-ul.visible-xs a[href*="Sushi"]{
+ul.visible-xs a[href*="cushi"]{
 	background: blue;
+}
+#chicken, #beef, #sushi{
+	font-size: 1.5rem;
+	font-weight: 100;
+	background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    background-attachment: scroll;
+    background-position: inherit;
+    margin: 50px 0 25px;
+
+} 
+#chicken p,
+#beef p,
+ #sushi p{
+    line-height: 200%;
+    font-weight: 400;
+}
+
+#chicken{
+background-image:linear-gradient(
+       rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)    
+    ),  url(../images/chicken.jpg);
+
+}
+#beef{
+background-image:linear-gradient(
+      rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)  
+    ),  url(../images/beef.jpg);
+
+}
+#sushi{
+background-image:linear-gradient(
+       rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)    
+    ),  url(../images/sushi.jpg);
+
+}
+#chicken h2,
+#beef h2,
+#sushi h2{
+	font-size: 40px;
+	padding: 20px;
+	color: #fff;
+	text-shadow:1px 1px 1px black;
+	background-image:linear-gradient(
+       rgba(0, 0, 0, .1),rgba( 0,0,0, 0.5)   
+    );
 }
