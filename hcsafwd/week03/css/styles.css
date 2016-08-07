@@ -3,19 +3,34 @@ body{
 }
 
 .navbar-default{
-	background: pink;
 	border-radius: 0;
+}
+h1{
+	font-size: 60px;
+	font-weight: 700;
 }
 
 /* nav color*/
 ul.visible-xs a[href*="chicken"]{
-	background: red;
+	background: rgb(210, 255, 82);
+	font-weight: 700;
 }
-ul.visible-xs a[href*="ceef"]{
-	background: green;
+ul.visible-xs a[href*="beef"]{
+	background: #b3dced;
+	font-weight: 700;
 }
-ul.visible-xs a[href*="cushi"]{
-	background: blue;
+ul.visible-xs a[href*="sushi"]{
+	background: rgba(255,255,136,1);
+	font-weight: 700;
+}
+ul.visible-xs a[href*="chicken"]:hover{
+	background: rgba(210, 255, 82,.75);
+}
+ul.visible-xs a[href*="beef"]:hover{
+	background: rgba(179, 220, 237,.75);
+}
+ul.visible-xs a[href*="sushi"]:hover{
+	background: rgba(255,255,136,.75);
 }
 #chicken, #beef, #sushi{
 	font-size: 1.5rem;
@@ -26,8 +41,17 @@ ul.visible-xs a[href*="cushi"]{
     background-attachment: scroll;
     background-position: inherit;
     margin: 50px 0 25px;
-
+    transition: background .5s ease-in-out;
 } 
+#chicken:hover{
+background: rgba(210, 255, 82,.5);
+}
+#beef:hover{
+background: rgba(179, 220, 237,.5)
+}
+#sushi:hover{
+background: rgba(255,255,136,.5);
+}
 #chicken p,
 #beef p,
  #sushi p{
@@ -39,28 +63,56 @@ ul.visible-xs a[href*="cushi"]{
 background-image:linear-gradient(
        rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)    
     ),  url(../images/chicken.jpg);
+ border: 2px solid #d2ff52;
 
 }
 #beef{
 background-image:linear-gradient(
       rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)  
     ),  url(../images/beef.jpg);
+ border: 2px solid #b3dced;
 
 }
 #sushi{
 background-image:linear-gradient(
        rgba(255, 255, 255, 1),rgba( 255,255,255, 0.65)    
     ),  url(../images/sushi.jpg);
-
+ border: 2px solid rgba(255,255,136,1);
 }
 #chicken h2,
 #beef h2,
 #sushi h2{
+	margin-top:-15px;
+	margin-left:-15px;
+	margin-right:-15px;
 	font-size: 40px;
 	padding: 20px;
+	padding left: 35px
 	color: #fff;
-	text-shadow:1px 1px 1px black;
-	background-image:linear-gradient(
-       rgba(0, 0, 0, .1),rgba( 0,0,0, 0.5)   
-    );
+	text-shadow:1px 1px 1px black;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff52+0,91e842+100;Neon */
+	background: #d2ff52; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d2ff52 0%, #91e842 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #d2ff52 0%,#91e842 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #d2ff52 0%,#91e842 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+
+}
+#beef h2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+background: #b3dced; /* Old browsers */
+background: -moz-linear-gradient(top,  #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+
+
+}
+#sushi h2{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffff88+0,ffff88+100;Yellow+Flat+%231 */
+background: #ffff88; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffff88 0%, #ffff88 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffff88 0%,#ffff88 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffff88 0%,#ffff88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffff88',GradientType=0 ); /* IE6-9 */
+
 }
